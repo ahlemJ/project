@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+<RelativeLayout
+    android:id="@+id/bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/profile_pic"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignEnd="@+id/search"
+        android:layout_alignRight="@+id/search" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:iconifiedByDefault="false"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="64dp"
+        android:queryHint="Cherchez votre terrain"
+
+        android:searchIcon="@drawable/search_icone"
+        android:closeIcon="@drawable/close_icone"
+        >
+
+        <requestFocus />
+
+    </SearchView>
+
+</RelativeLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bar" />
+    <ImageView
+        android:id="@+id/s"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/search_icone_green"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recherchez des terrains"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/s"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>

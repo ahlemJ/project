@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/namestade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginLeft="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/search1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="32dp"
+            android:background="@null"
+            android:src="@drawable/search_icone"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="32dp"
+            android:layout_alignParentRight="true" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/arrow"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/profile_pic"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+
+            />
+        <ImageButton
+            android:id="@+id/feedback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/feedback1"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="72dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/devider"
+        >
+        <RelativeLayout
+            android:id="@+id/layout_but"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/stade">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <terrain.foot.com.user._sliders.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_indicator" />
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/kk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_top"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_marginRight="16dp"
+
+           >
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/calendar"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+         <LinearLayout
+             android:id="@+id/reserve"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_gravity="center">
+            <TextView
+                android:id="@+id/reservee"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:textSize="15dp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="24dp"
+                android:text="RESERVEZ VOTRE MATCH"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Choisissez la date et heure que vous convient et réservez votre partie."
+                     android:gravity="start"
+                     android:textSize="12dp"
+                     android:textAlignment="viewStart"
+                     android:paddingLeft="24dp"
+
+                   />
+         </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/res1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_below="@+id/res"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+
+            >
+<RelativeLayout
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/trophy"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+        <LinearLayout
+            android:id="@+id/evenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/reserve1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:paddingLeft="24dp"
+                android:text="APERCU DES EVENEMENTS"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tournoi, évenements et offres en exclusivité."
+                android:gravity="start"
+                android:textSize="12dp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="24dp"
+
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/res2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/kk"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:id="@+id/propos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    >
+                    <Button
+                        android:id="@+id/reserve2"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textSize="15dp"
+                        android:paddingLeft="16dp"
+                        android:text="à PROPOS"
+                        android:textColor="#000"
+                        />
+                    <TextView
+                        android:id="@+id/localisation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Situé à Mornag Ben Arous"
+                        android:gravity="start"
+                        android:textSize="12dp"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tél : 26 181 641"
+                        android:gravity="start"
+                        android:textSize="12dp"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="16dp"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dispo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                   android:layout_below="@+id/propos"
+                    android:background="@android:color/white"
+
+                  >
+                    <TextView
+                        android:id="@+id/disp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disponibilité "
+                        android:textSize="12dp"
+                        android:layout_marginLeft="16dp"/>
+            <LinearLayout
+                android:id="@+id/linDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/football"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/water1"
+
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/shower"
+
+                        />
+            </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/dispo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/dispo"
+                    android:layout_marginTop="8dp"
+                    android:elevation="2dp">
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@color/devider"
+                        android:layout_alignParentRight="true"
+                        android:text="11"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:background="@color/devider"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
